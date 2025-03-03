@@ -1,15 +1,18 @@
 import { readNumber, readString, display } from '../../../../lib/dom-io.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById('repeat-them').addEventListener('click', () => {
   debugger;
 
   // read user values
+  const userInput = readString('user-text');
+  const userNumber = readNumber('number-of-times');
+  let result = '';
 
-  // repeat the characters in the text
-
-  for (_; _; _) {
-    for (_; _; _) {}
+  // repeat the entire string 'userNumber' times
+  for (let i = 0; i < userNumber; i++) {
+    result += userInput;
   }
 
-  // display the text with repeated characters
+  // display the text with repeated string
+  display('repeated-output', result);
 });
