@@ -9,11 +9,9 @@ document.getElementById('repeat-it').addEventListener('click', () => {
   let result = '';
 
   // repeat the string
-    for (let i = 0; i < userInput.length; i++) {
-    for (let j = 0; j < userNumber; j++) {
-      result += userInput[i];
+      for (let j = 0; j < userNumber; j++) {
+      result += userInput;
     }
-  }
 
 
   // display the repeated string

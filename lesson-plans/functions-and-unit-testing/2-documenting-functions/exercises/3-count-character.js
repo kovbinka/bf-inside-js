@@ -3,7 +3,11 @@
 console.log('-- begin --');
 
 /**
+ * This counts occurrences of a single character in a string.
  *
+ * @param {string} text - The string to search within.
+ * @param {string} toCount - The single character to count; returns -1 if not a single character.
+ * @returns {number} The number of occurrences of toCount in text, or -1 if toCount is invalid.
  */
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {
