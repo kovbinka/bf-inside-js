@@ -13,14 +13,29 @@
 
 // --- declare callbacks ---
 
+
+/**
+ * @param {String} [string=''] - the text to check with the callback
+ * @returns {Boolean} - "true" or "false", depending on the returns
+ */
 const isLongString = (str = '') => {
   return str.length > 5;
 };
+
+/**
+ * @param {String} [string=''] - the text to check with the callback
+ * @returns {Boolean} - "true" or "false", depending on the returns
+ */
 const hasACat = (string = '') => {
   return string.toLowerCase().includes('cat');
 };
+
+/**
+ * @param {String} [string=''] - the text to check with the callback
+ * @returns {Boolean} - "true" or "false", depending on the returns
+ */
 const isMyName = (txt = '') => {
-  return txt === '__'; // <-- your name here
+  return txt === 'Roman'; // <-- your name here
 };
 
 // --- declare function that uses a callback ---
@@ -51,5 +66,5 @@ console.assert(check3 === 'no', 'Test 3');
 const check4 = checkIt('concatenate', hasACat);
 console.assert(check4 === 'yes', 'Test 4');
 
-const check5 = checkIt('__', isMyName); // <-- your name here
+const check5 = checkIt('Roman', isMyName); // <-- your name here
 console.assert(check5 === 'yes', 'Test 5');
