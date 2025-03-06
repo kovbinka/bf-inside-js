@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // `=` and `===` look similar, but do VERY different things!

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // There are many kinds of numbers in JS
