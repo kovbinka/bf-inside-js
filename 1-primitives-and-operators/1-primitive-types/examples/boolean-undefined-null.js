@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // the final 3 types are much simpler than Strings and Numbers

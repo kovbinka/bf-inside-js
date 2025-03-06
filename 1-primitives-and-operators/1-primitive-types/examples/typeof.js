@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // there are 5 main primitive types in JavaScript

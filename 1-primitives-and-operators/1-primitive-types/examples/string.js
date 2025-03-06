@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // strs are anything between quotations
