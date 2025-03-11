@@ -17,10 +17,10 @@ const oneLineTemplate = `the car goes "vroom"`;
 console.log(oneLineTemplate);
 
 const manyLineNormal =
-  'roses are red\n' +
-  'violets are blue\n' +
-  'lilies are white\n' +
-  'lilacs are purple';
+ `roses are red
+violets are blue
+lilies are white
+lilacs are purple`;
 console.log(manyLineNormal);
 
 const manyLineTemplate = `roses are red

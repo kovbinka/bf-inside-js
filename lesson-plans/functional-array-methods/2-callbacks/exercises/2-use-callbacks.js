@@ -36,7 +36,7 @@ const isGreaterThanFive = (x = 0) => {
  * @returns {string} "neither", "one" or "both"
  */
 
-function checkNumbers(num1 = 0, num2 = 0, cb) {
+function checkThem(num1 = 0, num2 = 0, cb) {
   const result1 = cb(num1);
   const result2 = cb(num2);
 
@@ -44,6 +44,8 @@ function checkNumbers(num1 = 0, num2 = 0, cb) {
   if (result1 || result2) return 'one';
   return 'neither';
 }
+
+
 
 // --- test your function ---
 

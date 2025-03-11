@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -21,8 +19,8 @@ console.log('-- begin --');
 */
 
 // try different values to see what happens
-const a = _;
-const b = _;
+const a = 2;
+const b = 3;
 
 const realSubtraction = a - b;
 
@@ -32,5 +30,6 @@ const bNum = Number(b);
 const fakeSubtraction = aNum - bNum;
 
 console.assert(realSubtraction === fakeSubtraction, 'always the same!');
-
+console.log(realSubtraction);
+console.log(fakeSubtraction);
 console.log('-- end --');
