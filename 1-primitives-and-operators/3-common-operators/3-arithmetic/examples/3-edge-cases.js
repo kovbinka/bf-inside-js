@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -26,6 +24,9 @@ console.log('-- begin --');
 const NaN_1 = NaN - 12;
 const NaN_2 = 'e' * 1;
 const NaN_3 = undefined / 18;
+console.log(NaN_1);
+console.log(NaN_2);
+console.log(NaN_3);
 
 /* 0 / 0
   0 / 0 === NaN
@@ -36,6 +37,10 @@ const zeroDividedByZero_1 = 0 / 0;
 const zeroDividedByZero_2 = false / null;
 const zeroDividedByZero_3 = 0 / '0';
 const zeroDividedByZero_4 = '0.0' / 0.0;
+console.log(zeroDividedByZero_1);
+console.log(zeroDividedByZero_2);
+console.log(zeroDividedByZero_3);
+console.log(zeroDividedByZero_4);
 
 /* x / 0
   anything (except 0 or NaN) divided by 0 will give Infinity
@@ -49,6 +54,7 @@ const divideByZero_4 = 18 / '0';
 // exceptions
 const divideByZero_5 = NaN / 0;
 const divideByZero_6 = 0 / 0;
+console.log(divideByZero_1);
 
 /* 0 / x
   zero divided by anything (except NaN) is 0
@@ -73,6 +79,7 @@ const divideByInfinity_3 = -12 / '-Infinity';
 // exceptions
 const divideByInfinity_4 = Infinity / Infinity;
 const divideByInfinity_5 = NaN / Infinity;
+console.log(divideByInfinity_4);
 
 /* And there's certainly more
   send a PR if you know of another good edge case!

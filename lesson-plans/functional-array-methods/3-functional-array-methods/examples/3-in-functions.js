@@ -24,6 +24,20 @@ const _1_arg = ['1', '2', 'x', '', '-6'];
 const _1_result = findNumbers(_1_arg);
 console.log(_1_result); // [1, 2, 0, -6]
 
+const result1 = _1_arg.map((num) => {
+  return Number(num);
+}).filter((num) => {
+  return !Number.isNaN(num);
+});
+console.log(result1);
+
 const _2_arg = ['hi', '2', 'five', '5', ''];
 const _2_result = findNumbers(_2_arg);
 console.log(_2_result); // [2, 5, 0]
+
+const result2 = _2_arg.map((string) => {
+  return Number(string);
+}).filter((string) => {
+  return !Number.isNaN(string);
+});
+console.log(result2);
