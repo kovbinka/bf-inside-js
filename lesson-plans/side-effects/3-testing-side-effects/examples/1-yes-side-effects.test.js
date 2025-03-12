@@ -39,13 +39,15 @@ describe('reverseArray: reverses the entries in an array', () => {
     it('returns a new array', () => {
       // test for reference inequality (did the function return a new array?)
       const argument = ['a', 'b', 'c', 'd'];
-      const returned = reverseArray(argument);
+      const argumentModify = [...argument]
+      const returned = reverseArray(argumentModify);
       expect(argument === returned).toEqual(false);
     });
     it('does not modify the original array', () => {
       // test for side-effects (was the argument's reference modified?)
       const argument = ['a', 'b', 'c', 'd'];
-      reverseArray(argument);
+      const argumentModify = [...argument]
+      reverseArray(argumentModify);
       expect(argument).toEqual(['a', 'b', 'c', 'd']);
     });
   });
