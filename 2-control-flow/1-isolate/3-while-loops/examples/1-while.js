@@ -1,6 +1,3 @@
-// #todo
-
-// 1: use strict
 'use strict';
 
 console.log('-- begin --');
@@ -17,14 +14,14 @@ console.log('-- begin --');
 let a = 0;
 
 // 3, 5, 7, 9, 11: evaluate the condition
-while (a < 4) {
+while (a < 11) {
   // 4, 6, 8, 10: increment a
   a = a + 1;
   console.log(a);
 }
 
 // 12: assert a
-console.assert(a === 4, 'a should be 4');
+console.assert(a === 11, 'a should be 11');
 
 /* variables analysis:
 

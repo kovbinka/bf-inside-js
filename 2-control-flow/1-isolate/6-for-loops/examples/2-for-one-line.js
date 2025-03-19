@@ -1,6 +1,3 @@
-// #todo
-
-// 1: use strict
 'use strict';
 
 console.log('-- begin --');
@@ -17,13 +14,13 @@ console.log('-- begin --');
   hint 2: the step numbers will not be correct when the loopGuard is on
 
 */
-
+let i = 0;
 // 2: declare and assign i
 // 3, 6, 7, 11: evaluate the condition
 // 5, 10, 11, 13: increment i
-for (let step = 0; step < 3; step++) {
+for (let i = 0; i < 3; i++) {
   // 4, 7, 10: evaluate the body
-  console.log(step);
+  console.log(i);
 }
 
 console.log('-- end --');

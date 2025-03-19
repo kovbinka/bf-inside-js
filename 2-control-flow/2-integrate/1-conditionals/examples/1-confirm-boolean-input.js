@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* Confirming with Boolean Input

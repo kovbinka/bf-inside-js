@@ -1,14 +1,21 @@
-// #todo
-
 'use strict';
 
 let validInput = '';
-let isNotValid = true;
-while (isNotValid) {
+let isValid = false;
+while (!isValid) {
   const userInput = prompt('enter anything with "e" or "E" as the 5th letter');
 
-  /* -- BEGIN: validate input -- */
-  /* -- END: validate input -- */
+  if (userInput === null || userInput === '') {
+    alert('that is nothing');
+  } else if (userInput.length < 5) {
+    alert('too short');
+  } else if (userInput[4] === 'e' || userInput[4] === 'E') {
+    validInput = userInput;
+    isValid = true;
+  } else {
+    alert('input has no "e" or "E" as the 5th character');
+    continue;
+  }
 }
 
 alert('done: "' + validInput + '"');
