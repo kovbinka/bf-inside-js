@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -25,14 +23,9 @@ const padding = '.:.';
 // accumulator variable, collecting the final result
 let paddedString = 'hi';
 
-// boolean flag variable
-let isLongEnough = false;
-while (_) {
-  paddedString = _;
+while (paddedString.length !== longEnough) {
+  paddedString = paddedString + padding;
   console.log(paddedString);
-  if (_) {
-    _;
-  }
 }
 
 console.assert(

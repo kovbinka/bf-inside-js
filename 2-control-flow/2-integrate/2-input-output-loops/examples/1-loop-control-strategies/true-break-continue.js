@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* while, break, continue

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -7,18 +5,19 @@ console.log('-- begin --');
 const word = 'pitsicola';
 
 let index = -1;
-while (index < _._) {
+while (index < word.length) {
   index += 1;
 
   // skip characters with odd indexes
-  if (index % _ !== _) {
-    _;
+  if (index % 2 !== 0) {
+    console.log('continue to next iteration');
+    continue;
   }
 
   const nextLetter = word[index];
   console.log(index + ': ' + nextLetter); // p, t, i, o, a
 }
 
-console.assert(_ === _._, 'index should be the same as the word length');
+console.assert(index === word.length, 'index should be the same as the word length');
 
 console.log('-- end --');

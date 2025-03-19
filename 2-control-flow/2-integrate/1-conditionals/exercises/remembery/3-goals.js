@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 alert(`Remembery, the game of remembering.
@@ -29,7 +27,7 @@ const randomDecimal = Math.random();
 const decimalTimes3 = randomDecimal * 3;
 const randomFrom1To3 = Math.ceil(decimalTimes3);
 
-const attempt = prompt('enter phrase number ' + randomFrom1To3);
+// const attempt = prompt('enter phrase number ' + randomFrom1To3);
 
 let correctAnswer = '';
 if (randomFrom1To3 === 1) {
@@ -41,5 +39,12 @@ if (randomFrom1To3 === 1) {
 }
 
 /* -- BEGIN: check if the user was correct and let them know -- */
+
+const userAsking = prompt('enter phrase number ' + randomFrom1To3);
+const compare = correctAnswer === userAsking;
+
+const result = compare ? 'you are right' : 'nope';
+alert(result);
+
 
 /* -- END: check if the user was correct and let them know -- */

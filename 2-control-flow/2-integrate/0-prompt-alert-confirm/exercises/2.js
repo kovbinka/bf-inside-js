@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // fill in the blank to pass the assertion

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -12,10 +10,18 @@ for (const letter of school) {
 
 // write this for...of loop as a for loop:
 
-for (_; _; _) {}
+for (let i = 0; i < school.length; i++) {
+  let letterOne = school[i];
+  console.log(letterOne);
+}
 
 // write this for loop as a while loop:
 
-while (_) {}
+let x = 0
+while (x < school.length) {
+  const letter = school[x];
+  console.log(letter);
+  x++;
+}
 
 console.log('-- end --');

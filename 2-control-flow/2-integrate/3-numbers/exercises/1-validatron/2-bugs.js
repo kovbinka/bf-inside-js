@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* look out for:
@@ -17,8 +15,8 @@ const inputIsANumber = !Number(userNumber);
 
 const confirmMessage =
   'did you really enter a number?\n\n' + 'yes -> "ok"\n' + 'no  -> "cancel"';
-const userThinksItsANumber = alert(confirmMessage);
+const userThinksItsANumber = confirm(confirmMessage);
 
-const userIsCorrect = (userThinksItsANumber = inputIsANumber);
+const userIsCorrect = (userThinksItsANumber === inputIsANumber);
 
 alert(userIsCorrect ? 'correct!' : 'nope :(');
