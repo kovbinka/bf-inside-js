@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -14,7 +12,7 @@ const value1 = 'hello';
 const value2 = false;
 let path = '';
 
-if (_) {
+if (value2 && typeof value1 === 'string') {
   path = 'if';
 } else {
   path = 'else';

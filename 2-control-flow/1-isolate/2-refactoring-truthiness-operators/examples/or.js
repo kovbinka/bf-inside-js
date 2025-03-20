@@ -1,8 +1,8 @@
 'use strict';
 
 // experiment with different values
-const a = _;
-const b = _;
+const a = 'string';
+const b = 'string2';
 
 // "or" expression
 const orValue = a || b;
