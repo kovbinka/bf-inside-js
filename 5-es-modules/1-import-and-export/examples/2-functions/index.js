@@ -1,5 +1,3 @@
-// #todo
-
 debugger;
 
 import { greet } from './greet.js';

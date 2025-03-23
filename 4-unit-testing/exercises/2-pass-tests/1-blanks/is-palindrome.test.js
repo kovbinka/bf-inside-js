@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /**
@@ -10,17 +8,21 @@
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let itIs = _;
-  for (let i = 0; i <= toCheck.length / 2; i++) {
-    const left = toCheck[_];
-    const right = toCheck[_];
-    if (_) {
-      itIs = _;
-      __;
+  for (let i = 0; i < toCheck.length / 2; i++) {
+    const left = toCheck[i];
+    const right = toCheck[toCheck.length - 1 - i];
+    if (left !== right) {
+      return false;
     }
   }
-  return itIs;
+  return true;
 };
+
+// const isPalindrome = (toCheck = '') => {
+//   const reversed = toCheck.split('').reverse().join('');
+//   const compare = reversed === toCheck;
+//   return compare;
+// };
 
 describe('isPalindrome: checks if a string is the same forwards and backwards', () => {
   describe('what is a palindrome', () => {

@@ -1,11 +1,12 @@
-// #todo
-
 'use strict';
 
 /**
  *
  */
-__;
+function reverser (text = '') {
+  const result = text.split('').reverse().join('');
+  return result;
+};
 
 describe('reverser: reverses a string', () => {
   it('reverses one letter', () => {

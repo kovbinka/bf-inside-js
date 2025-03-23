@@ -1,5 +1,3 @@
-// #todo
-
 debugger;
 console.log('executing index.js');
 

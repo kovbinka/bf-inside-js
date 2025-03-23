@@ -1,11 +1,11 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
 
 /**
- *
+ *@param {String} [text=0] - Left inputed text.
+ *@param {String} [toCount=0] - Right inputed text-counter to check if it exist in right inputed text.
+ *@returns {Number} [count] - Returns number depends on how many times was repeated some `toCount` char in Left input string. 
  */
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {

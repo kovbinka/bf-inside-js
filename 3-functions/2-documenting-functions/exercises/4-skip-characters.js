@@ -1,11 +1,11 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
 
 /**
- *
+ *@param {String} [text=''] - String that will be skipified.
+ *@param {Number} [text=''] - Which character to skip (each 1 or 2 and so on).
+ *@returns {String} [skipified=''] - Returns new skipified string.
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {

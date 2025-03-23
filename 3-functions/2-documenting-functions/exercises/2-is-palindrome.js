@@ -1,14 +1,12 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
 
 /**
- * _
+ * Palindrome checker
  *
- * @_ {_} [_=_] - _
- * @_ {_}  _
+ * @param {string} [toCheck=''] - String to compare with reversed string.
+ * @returns {Boolean} A boolean after checking if user input string is the same like reversed string.
  */
 const isPalindrome = (toCheck = '') => {
   let reversed = '';

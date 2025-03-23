@@ -1,5 +1,3 @@
-// #todo
-
 import { reverse } from './utils/reverse.js';
 
 /* reverse text or words

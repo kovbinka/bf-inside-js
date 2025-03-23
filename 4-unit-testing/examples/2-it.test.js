@@ -1,7 +1,5 @@
-// #todo
 
 'use strict';
-
 /* it
 
   it is used to wrap each test case

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -21,7 +19,7 @@
  */
 const isPalindrome = (toCheck = '') => {
   let reversed = '';
-  for (const character of reversed) {
+  for (const character of toCheck) {
     reversed = character + reversed;
   }
   return toCheck === reversed;

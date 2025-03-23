@@ -1,5 +1,3 @@
-// #todo
-
 import { repeatCharacters } from './utils/repeat-characters.js';
 
 /* ===== main program (use functions) ===== */

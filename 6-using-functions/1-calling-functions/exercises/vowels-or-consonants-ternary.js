@@ -22,11 +22,17 @@ const removeVowels = confirm(`what do you want to remove?
 - vowels: "ok"
 - consonants: "cancel"`);
 
+let result = '';
+if(removeVowels){
 const vowels = 'aeiouAEIOU';
+result = removeCharacters(original, vowels);
+} else {
 const consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+result = removeCharacters(original, consonants);
+}
 
 // use `removeCharacters` to create a new value for `removified`
-const removified = __ ? __ : __;
+const removified = removeVowels ? result : result;
 
 alert(`before: ${original}
 after: ${removified}`);

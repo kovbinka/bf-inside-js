@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* expect(received).toEqual(expected)

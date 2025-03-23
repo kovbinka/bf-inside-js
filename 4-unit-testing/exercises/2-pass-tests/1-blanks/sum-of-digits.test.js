@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /**
@@ -10,15 +8,16 @@
  * @returns {number} The sum of all digits in toSum.
  */
 const sumOfDigits = (toSum = 0) => {
-  const _ = String(toSum);
+  const stringedNumber = String(toSum);
+  const isNegative = toSum < 0;
   const onlyDigits = stringedNumber.replaceAll('.', '').replaceAll('-', '');
   let sum = 0;
-  for (const character of _) {
-    const num = _(character);
-    __;
+  for (const character of onlyDigits) {
+    const num = Number(character);
+    sum += num;
   }
 
-  return _ ? -sum : sum;
+  return isNegative ? -sum : sum;
 };
 
 describe('sumOfDigits: sums the digits in a number', () => {

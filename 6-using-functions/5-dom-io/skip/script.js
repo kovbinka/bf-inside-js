@@ -1,7 +1,14 @@
 import { readNumber, readString, display } from '../../../lib/dom-io.js';
 
-import { _ } from './utils/_.js';
+import { skip } from './utils/util.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById('skip-them').addEventListener('click', () => {
   debugger;
+
+  const str = readString('user-text');
+  const num = readNumber('skip-size');
+
+  let result = skip(str, num);
+
+  display('skipped-output', result);
 });

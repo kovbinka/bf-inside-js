@@ -1,11 +1,11 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
 
 /**
- *
+ * @param {String} [text = ''] - Input string that will be shifted.
+ * @param {Number} [shift = 0] - A number that will indicate how many characters to shift the entered characters according to Unicode.
+ * @returns {String} - New shifted string.
  */
 const unicodeShuffle = (text = '', shift = 0) => {
   let encodedString = '';
