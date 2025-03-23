@@ -1,9 +1,7 @@
-// #todo
-
 debugger;
 
-import { __ } from './reverse.js';
+import { reverse } from './reverse.js';
 
-const actual = __;
+const actual = reverse('JavaScript');
 
 console.assert(actual === 'tpircSavaJ', 'Test 1');

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /**
@@ -9,7 +7,10 @@
  * @param {number} [y=_] - The right number.
  * @returns {number} The sum of x and y.
  */
-__;
+ function add (num1 = 0, num2 = 0) {
+   const result = num1 + num2;
+   return result;
+ };
 
 describe('add: adds two numbers', () => {
   describe('how addition works', () => {

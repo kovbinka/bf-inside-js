@@ -1,7 +1,14 @@
 import { readNumber, display } from '../../../lib/dom-io.js';
 
-import { _ } from './utils/_.js';
+import { multiply } from './utils/util.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById('do-math').addEventListener('click', () => {
   debugger;
+
+  let left = readNumber('left');
+  let right = readNumber('right');
+
+  let result = multiply(left, right);
+
+  display('product', result);
 });

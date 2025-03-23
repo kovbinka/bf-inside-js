@@ -1,7 +1,14 @@
 import { readString, display } from '../../../lib/dom-io.js';
 
-import { _ } from './utils/_.js';
+import { pyro } from './utils/util.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById('pyramid-it').addEventListener('click', () => {
   debugger;
+
+  const txt = readString('to-pyramid');
+
+  const result = pyro(txt);
+
+  display('pyramided', result);
+  
 });

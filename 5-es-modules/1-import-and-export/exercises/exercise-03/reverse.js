@@ -1,5 +1,3 @@
-// #todo
-
 debugger;
 
 export const reverse = (text = '') => {

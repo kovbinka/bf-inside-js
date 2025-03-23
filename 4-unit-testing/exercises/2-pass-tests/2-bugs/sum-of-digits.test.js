@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /**
@@ -11,15 +9,24 @@
  */
 const sumOfDigits = (toSum = 0) => {
   const digitsToSum = String(toSum);
-  let sum = 0;
-  for (const character of digitsToSum) {
-    const digit = Number(character);
-    if (Number.isNaN(digit)) {
-      sum += sum + digit;
-    }
+  const replaced = digitsToSum.replaceAll('.', '').replaceAll('-', '');
+
+  if (replaced === new RegExp('/a-zA-Z/', 'i')) {
+    return 0;
   }
 
-  return toSum > 0 ? sum : sum;
+  if (toSum === 0) {
+    return 0;
+  }
+
+  let sum = 0;
+  for (let character of replaced) {
+    let digit = Number(character);
+    sum += digit;
+  }
+  
+
+  return toSum > 0 ? sum : -sum;
 };
 
 describe('sumOfDigits: sums the digits in a number', () => {
