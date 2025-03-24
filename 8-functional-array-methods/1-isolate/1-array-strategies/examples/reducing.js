@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -16,6 +14,7 @@ let _1_sumOfNumbers = 0;
 for (const number of _1_numbers) {
   _1_sumOfNumbers += number;
 }
+console.log(_1_sumOfNumbers);
 
 // cast each item to a string and concatenate them
 const _2_values = [10, false, 'hello', null, undefined];
@@ -23,6 +22,7 @@ let _2_concatenated = '';
 for (const value of _2_values) {
   _2_concatenated += String(value);
 }
+console.log(_2_concatenated);
 
 // huh, what is this?
 const _3_letters = ['a', 'b', 'c', 'd'];
@@ -31,5 +31,6 @@ for (const letter of _3_letters) {
   const everythingSoFar = _3_snowball + letter;
   _3_snowball += everythingSoFar;
 }
+console.log(_3_snowball);
 
 console.log('-- end --');
