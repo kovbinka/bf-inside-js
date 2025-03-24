@@ -1,5 +1,3 @@
-// #todo
-
 /**
  * find the first negative number, returns undefined if there is none
  *  does not modify the array
@@ -16,7 +14,7 @@ export const firstNegativeNumber = (arr) => {
   };
 
   // fill in the array method names and callbacks
-  const negativeNumber = arr._(_)._(_);
+  const negativeNumber = arr.filter(isNumber).find(isNegative);
 
   return negativeNumber;
 };
