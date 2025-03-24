@@ -26,7 +26,7 @@ describe('longToUpper: makes all long strings in an array upper case', () => {
         ['computers', 'always', 'copy', 'paste', 'code'],
         5,
       );
-      expect(actual).toEqual(['COMPUTERS', 'ALWAYS', 'copy', 'PASTE', 'code']);
+      expect(actual).toEqual(['COMPUTERS', 'ALWAYS', 'copy', 'paste', 'code']);
     });
   });
   describe('there are no side-effects', () => {

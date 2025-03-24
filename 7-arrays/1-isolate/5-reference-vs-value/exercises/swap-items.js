@@ -10,6 +10,11 @@ const arr1 = [1, 2, 'b', 4];
 const arr2 = [3, 'a', 'c'];
 let temp;
 
+temp = arr1[2];
+arr1[2] = arr2[0];
+arr2[0] = arr2[1];
+arr2[1] = temp;
+
 // -- swap values (write this code) --
 
 // -- assert values (this is correct) --

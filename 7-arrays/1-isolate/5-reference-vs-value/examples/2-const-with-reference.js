@@ -20,4 +20,5 @@ letArray[0] = 6; // no error
 letArray[1] = 7; // no error
 letArray.push(12); // no error
 letArray.pop(); // no error
-letArray = [6]; // no error
+// letArray = [6]; // no error
+console.log(letArray);
