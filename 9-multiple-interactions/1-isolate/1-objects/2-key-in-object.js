@@ -32,6 +32,10 @@ fridge.rice = undefined;
 const riceInFridge = 'rice' in fridge;
 console.log('rice:', fridge.rice, 'rice in fridge:', riceInFridge);
 
+fridge.ball = 'foot';
+const ballInFoot = 'ball' in fridge;
+console.log(ballInFoot)
+
 const pastaInFridge = 'pasta' in fridge;
 console.log('pasta:', fridge.pasta, 'pasta in fridge:', pastaInFridge);
 

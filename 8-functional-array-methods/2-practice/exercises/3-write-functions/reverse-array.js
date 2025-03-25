@@ -1,6 +1,7 @@
-// #todo
-
 /**
  *
  */
-export const reverseArray = (arr = []) => {};
+export const reverseArray = (arr = []) => {
+  const arrCopy = [...arr]
+  return arrCopy.reverse();
+};
